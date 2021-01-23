@@ -7,25 +7,24 @@
   <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="scanpagina.js"></script>
+  <link rel="stylesheet" href="scanpagina.css">
   <title>AR dieren</title>
 </head>
 
   <body>
-  <a-scene id="js--scene" embedded arjs>
+  <a-scene embedded>
     <a-camera>
-      <a-link href="smoelenboek.html" title="My Homepage" image="blendermodellen/giraf3.png"></a-link>
-
-  		<a-marker preset="custom" type="pattern" url="markers/pattern-ster.patt">
+  		<a-marker  giraf preset="custom" type="pattern" url="markers/pattern-plus.patt">
           <a-gltf-model  src="blendermodellen/rafrafAR.gltf" position="1 1 1" rotation="0 90 -90" scale="0.4 0.4 0.4" animation-mixer="loop:repeat"></a-gltf-model>
     </a-marker>
 
-    <a-marker preset="kanji">
-        <a-box> </a-box>
+    <a-marker  preset="kanji">
+        <a-gltf-model  src="blendermodellen/pinguin.gltf" position="1 1 1" rotation="-90 90 -90" scale="0.4 0.4 0.4" animation-mixer="loop:repeat"></a-gltf-model>
       </a-marker>
     </a-marker>
 
-    <a-marker registerevents preset="custom" type="pattern" url="markers/pattern-pijl.patt">
-        <a-plane> </a-plane>
+    <a-marker  preset="custom" type="pattern" url="markers/pattern-pijl.patt">
+    <a-box<> </a-box>
     </a-marker>
 
   </a-camera>

@@ -1,7 +1,4 @@
-
-
-
-AFRAME.registerComponent('registerevents', {
+AFRAME.registerComponent('giraf', {
 
 
   init: function () {
@@ -10,14 +7,17 @@ AFRAME.registerComponent('registerevents', {
     marker.addEventListener('markerFound', function() {
       var markerId = marker.id;
       console.log('markerFound', markerId);
-      var favoritemovie = "Shrek";
-      sessionStorage.setItem("favoriteMovie", favoritemovie);
-      window.location.href = "smoelenboek.html";
+      var markerGevonden1 = "Tijger";
+      sessionStorage.setItem("marker1", markerGevonden1);
+
+
     });
 
     marker.addEventListener('markerLost', function() {
       var markerId = marker.id;
       console.log('markerLost', markerId);
     });
+
   }
+
 });
