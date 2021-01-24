@@ -44,6 +44,6 @@ function veranderAfbeelding(afbeelding){
 }
 
 function resetKleding(giraffe){
-  document.getElementById("--js-dier").src = giraffe;
+  document.getElementById("--js-dier").src = olifant;
   strop = false;
 }
