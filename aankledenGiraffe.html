@@ -3,7 +3,7 @@
 
   <head>
 
-      <title>HH-aankleden</title>
+      <title>HH-aankleden-Giraffe</title>
 
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,31 +12,34 @@
       <link rel="stylesheet" type="text/css" href="css/aankleden.css" />
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
-      <script src="js/aankleden.js" type="text/javascript"></script>
+      <script src="js/aankledenGiraffe.js" type="text/javascript"></script>
 
   </head>
 
   <body>
     <article class="container">
       <div class="top">
-        <h1 class="top__logo">Hospital Hero</h1>
+        <div class="top__grid">
+          <h1 class="top__grid__logo">Hospital Hero</h1>
+          <button type="button" class="top__grid__reset" onclick="resetKleding(giraffe)" id="--js-reset" name="reset">&#9851; </button>
+        </div>
       </div>
 
       <div class="container__kleding">
         <ul class="container__kleding__list">
           <li class="container__kleding__list__item">
-            <img class="container__kleding__list__item__image" id="--js-phoed" src="img\hoed_preview.png" alt="phoed">
+            <img class="container__kleding__list__item__image" onclick="veranderKleding('phoed')" id="--js-phoed" src="img\hoed_preview.png" alt="phoed">
           </li>
           <li class="container__kleding__list__item">
-            <img class="container__kleding__list__item__image" id="--js-bhoed" src="img\bhoed_preview.png" alt="bhoed">
+            <img class="container__kleding__list__item__image" onclick="veranderKleding('bhoed')" id="--js-bhoed" src="img\bhoed_preview.png" alt="bhoed">
           </li>
           <li class="container__kleding__list__item">
-            <img class="container__kleding__list__item__image" id="--js-das" src="img\das_preview.png" alt="stropdas">
+            <img class="container__kleding__list__item__image" onclick="veranderKleding('stropdas')" id="--js-stropdas" src="img\das_preview.png" alt="stropdas">
           </li>
         </ul>
       </div>
       <div class="container__dier">
-        <img class= "container__dier__image" src="img\pinguin_preview.png" alt="afbeelding van Pinguin">
+        <img class= "container__dier__image" id="--js-dier" src="img\giraffe_preview.png" alt="afbeelding van Giraffe">
       </div>
 
       <nav class="menu">
