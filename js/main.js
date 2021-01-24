@@ -9,7 +9,7 @@ window.onload = function () {
         const model = document.createElement("a-entity");
         model.setAttribute("position", {
             x: -4,
-            y: -1.5,
+            y: -1.99,
             z: -8
         });
         model.setAttribute("rotation", {
@@ -31,7 +31,7 @@ window.onload = function () {
         const model = document.createElement("a-entity");
         model.setAttribute("position", {
             x: -4,
-            y: -1.5,
+            y: -1.99,
             z: -8
         });
         model.setAttribute("rotation", {
@@ -53,7 +53,7 @@ window.onload = function () {
         const model = document.createElement("a-entity");
         model.setAttribute("position", {
             x: -4,
-            y: -1.5,
+            y: -1.99,
             z: -8
         });
         model.setAttribute("rotation", {
