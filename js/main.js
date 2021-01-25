@@ -1,9 +1,9 @@
 window.onload = function () {
     const scene = document.querySelector('a-scene');
     // Recieved Data
-    var recievedPenguinData = sessionStorage.getItem('');
-    var recievedOlifantData = sessionStorage.getItem('');
-    var recviedGiraffeData = sessionStorage.getItem('');
+    var receivedPData = sessionStorage.getItem('pinguinOutfit');
+    var receivedOData = sessionStorage.getItem('olifantOutfit');
+    var receivedGData = sessionStorage.getItem('giraffeOutfit');
 
     // dynamically create a-entity with according values.
     const giraffe = () => {
@@ -27,36 +27,37 @@ window.onload = function () {
         });
 
         // Chose the right gltf 3D model based on recieved data.
-        switch ("5") {
+        switch (receivedGData) {
 
-            case "0":
+            case "1":
                 model.setAttribute("gltf-model", "#rafrafwalking")
                 break;
 
-            case "1":
+            case "2":
                 model.setAttribute("gltf-model", "#rafrafwalking_phoed")
                 break;
 
-            case "2":
+            case "3":
                 model.setAttribute("gltf-model", "#rafrafwalking_bhoed")
                 break;
 
-            case "3":
-                model.setAttribute("gltf-model", "#rafrafwalking_phoed_stropdas")
-                break;
-
             case "4":
-                model.setAttribute("gltf-model", "#rafrafwalking_bhoed_stropdas")
+                model.setAttribute("gltf-model", "#rafrafwalking_stropdas")
                 break;
 
             case "5":
-                model.setAttribute("gltf-model", "#rafrafwalking_stropdas")
+                model.setAttribute("gltf-model", "#rafrafwalking_phoed_stropdas")
+                break;
+
+            case "6":
+                model.setAttribute("gltf-model", "#rafrafwalking_bhoed_stropdas")
                 break;
 
         }
 
         scene.appendChild(model);
     }
+    console.log(receivedGData);
 
     const olifant = () => {
         const model = document.createElement("a-entity");
@@ -77,36 +78,37 @@ window.onload = function () {
             z: 0.4
         });
 
-        switch ("5") {
+        switch (receivedOData) {
 
-            case "0":
+            case "1":
                 model.setAttribute("gltf-model", "#olifant")
                 break;
 
-            case "1":
+            case "2":
                 model.setAttribute("gltf-model", "#olifant_phoed")
                 break;
 
-            case "2":
+            case "3":
                 model.setAttribute("gltf-model", "#olifant_bhoed")
                 break;
 
-            case "3":
-                model.setAttribute("gltf-model", "#olifant_phoed_stropdas")
-                break;
-
             case "4":
-                model.setAttribute("gltf-model", "#olifant_bhoed_stropdas")
+                model.setAttribute("gltf-model", "#olifant_stropdas")
                 break;
 
             case "5":
-                model.setAttribute("gltf-model", "#olifant_stropdas")
+                model.setAttribute("gltf-model", "#olifant_phoed_stropdas")
+                break;
+
+            case "6":
+                model.setAttribute("gltf-model", "#olifant_bhoed_stropdas")
                 break;
 
         }
 
         scene.appendChild(model);
     }
+    console.log(receivedOData);
 
     const pinguin = () => {
         const model = document.createElement("a-entity");
@@ -126,41 +128,44 @@ window.onload = function () {
             y: 0.4,
             z: 0.4
         });
-        model.setAttribute("gltf-model", "#pinguin")
 
-        switch ("5") {
+        switch (receivedPData) {
 
-            case "0":
+            case "1":
                 model.setAttribute("gltf-model", "#pinguin")
                 break;
 
-            case "1":
+            case "2":
                 model.setAttribute("gltf-model", "#pinguin_phoed")
                 break;
 
-            case "2":
+            case "3":
                 model.setAttribute("gltf-model", "#pinguin_bhoed")
                 break;
 
-            case "3":
-                model.setAttribute("gltf-model", "#pinguin_phoed_stropdas")
-                break;
-
             case "4":
-                model.setAttribute("gltf-model", "#pinguin_bhoed_stropdas")
+                model.setAttribute("gltf-model", "#pinguin_stropdas")
                 break;
 
             case "5":
-                model.setAttribute("gltf-model", "#pinguin_stropdas")
+                model.setAttribute("gltf-model", "#pinguin_phoed_stropdas")
+                break;
+
+            case "6":
+                model.setAttribute("gltf-model", "#pinguin_bhoed_stropdas")
                 break;
 
         }
 
         scene.appendChild(model);
     }
+    console.log(receivedPData);
 
     giraffe();
     olifant();
     pinguin();
+    console.log(sessionStorage.getItem('giraffeOutfit'));
+    console.log(sessionStorage.getItem('olifantOutfit'));
+    console.log(sessionStorage.getItem('pinguinOutfit'));
 
 };
