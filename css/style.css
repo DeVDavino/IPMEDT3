@@ -51,10 +51,11 @@ body {
 
 .container__plein {
     grid-column: 2 / span 10;
-    grid-row: 3 / span 13;
+    grid-row: 3 / span 11;
     overflow: hidden;
-    border-bottom-left-radius: 6rem 4rem;
-    border-bottom-right-radius: 6rem 4rem;
+    border-radius: 1.5rem;
+    /* border-bottom-left-radius: 6rem 4rem;
+    border-bottom-right-radius: 6rem 4rem; */
 }
 
 .menu {
