@@ -5,8 +5,10 @@ const giraffe_stropdas = 'img/giraffe_stropdas_preview.png';
 const giraffe_phoed_stropdas = 'img/giraffe_phoed_stropdas_preview.png';
 const giraffe_bhoed_stropdas = 'img/giraffe_bhoed_stropdas_preview.png';
 
-var giraffeData = 0;
+
 var strop = false;
+
+var giraffeKleding = 1;
 
 function veranderKleding(kleding){
   console.log(strop);
@@ -15,12 +17,16 @@ function veranderKleding(kleding){
     switch(kleding){
       case "phoed" :
         veranderAfbeelding(giraffe_phoed_stropdas);
-        sessionStorage.setItem('giraffeData', 5);
+        var giraffeKleding = 5;
+        sessionStorage.setItem('giraffeOutfit', giraffeKleding);
+        console.log(sessionStorage.getItem('giraffeOutfit'));
         break;
 
       case "bhoed" :
         veranderAfbeelding(giraffe_bhoed_stropdas);
-        sessionStorage.setItem('giraffeData', 6);
+        var giraffeKleding = 6;
+        sessionStorage.setItem('giraffeOutfit', giraffeKleding);
+        console.log(sessionStorage.getItem('giraffeOutfit'));
         break;
     }
   } else {
@@ -28,17 +34,23 @@ function veranderKleding(kleding){
     switch(kleding){
       case "phoed" :
         veranderAfbeelding(giraffe_phoed);
-        sessionStorage.setItem('giraffeData', 2);
+        var giraffeKleding = 2;
+        sessionStorage.setItem('giraffeOutfit', giraffeKleding);
+        console.log(sessionStorage.getItem('giraffeOutfit'));
         break;
 
       case "bhoed" :
         veranderAfbeelding(giraffe_bhoed);
-        sessionStorage.setItem('giraffeData', 3);
+        var giraffeKleding = 3;
+        sessionStorage.setItem('giraffeOutfit', giraffeKleding);
+        console.log(sessionStorage.getItem('giraffeOutfit'));
         break;
 
         case "stropdas" :
           veranderAfbeelding(giraffe_stropdas);
-          sessionStorage.setItem('giraffeData', 4);
+          var giraffeKleding = 4;
+          sessionStorage.setItem('giraffeOutfit', giraffeKleding);
+          console.log(sessionStorage.getItem('giraffeOutfit'));
           strop = true;
           break;
     }
@@ -51,6 +63,8 @@ function veranderAfbeelding(afbeelding){
 
 function resetKleding(giraffe){
   document.getElementById("--js-dier").src = giraffe;
-  sessionStorage.setItem('giraffeData', 1);
   strop = false;
+  var giraffeKleding = 1;
+  sessionStorage.setItem('giraffeOutfit', giraffeKleding);
+  console.log(sessionStorage.getItem('giraffeOutfit'));
 }

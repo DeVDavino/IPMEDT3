@@ -5,8 +5,10 @@ const pinguin_stropdas = 'img/pinguin_stropdas_preview.png';
 const pinguin_phoed_stropdas = 'img/pinguin_phoed_stropdas_preview.png';
 const pinguin_bhoed_stropdas = 'img/pinguin_bhoed_stropdas_preview.png';
 
-var pinguinData = 0;
+
 var strop = false;
+
+var pinguinKleding = 1;
 
 function veranderKleding(kleding){
   console.log(strop);
@@ -15,12 +17,16 @@ function veranderKleding(kleding){
     switch(kleding){
       case "phoed" :
         veranderAfbeelding(pinguin_phoed_stropdas);
-        sessionStorage.setItem('pinguinData', 5);
+        var pinguinKleding = 5;
+        sessionStorage.setItem('pinguinOutfit', pinguinKleding);
+        console.log(sessionStorage.getItem('pinguinOutfit'));
         break;
 
       case "bhoed" :
         veranderAfbeelding(pinguin_bhoed_stropdas);
-        sessionStorage.setItem('pinguinData', 6);
+        var pinguinKleding = 6;
+        sessionStorage.setItem('pinguinOutfit', pinguinKleding);
+        console.log(sessionStorage.getItem('pinguinOutfit'));
         break;
     }
   } else {
@@ -28,17 +34,23 @@ function veranderKleding(kleding){
     switch(kleding){
       case "phoed" :
         veranderAfbeelding(pinguin_phoed);
-        sessionStorage.setItem('pinguinData', 2);
+        var pinguinKleding = 2;
+        sessionStorage.setItem('pinguinOutfit', pinguinKleding);
+        console.log(sessionStorage.getItem('pinguinOutfit'));
         break;
 
       case "bhoed" :
         veranderAfbeelding(pinguin_bhoed);
-        sessionStorage.setItem('pinguinData', 3);
+        var pinguinKleding = 3;
+        sessionStorage.setItem('pinguinOutfit', pinguinKleding);
+        console.log(sessionStorage.getItem('pinguinOutfit'));
         break;
 
         case "stropdas" :
           veranderAfbeelding(pinguin_stropdas);
-          sessionStorage.setItem('pinguinData', 4);
+          var pinguinKleding = 4;
+          sessionStorage.setItem('pinguinOutfit', pinguinKleding);
+          console.log(sessionStorage.getItem('pinguinOutfit'));
           strop = true;
           break;
     }
@@ -51,6 +63,8 @@ function veranderAfbeelding(afbeelding){
 
 function resetKleding(giraffe){
   document.getElementById("--js-dier").src = pinguin;
-  sessionStorage.setItem('pinguinData', 1);
   strop = false;
+  var pinguinKleding = 1;
+  sessionStorage.setItem('pinguinOutfit', pinguinKleding);
+  console.log(sessionStorage.getItem('pinguinOutfit'));
 }
