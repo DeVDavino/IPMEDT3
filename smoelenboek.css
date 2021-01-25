@@ -59,25 +59,25 @@ body{
 }
 
 .titel__dieren__giraf{
-  grid-column:3/span 2;
+  grid-column:3/span 3;
   grid-row: 2;
   text-align: center;
-  margin-top: 30%;
+  margin-top: 20%;
   font-size: 18px;
 }
 .titel__dieren__pinguin{
-  grid-column:8/span 2;
+  grid-column:8/span 3;
   grid-row: 6;
   text-align: center;
-  margin-top: 30%;
+  margin-top: 20%;
   font-size: 18px;
 
 }
 .titel__dieren__olifant{
-  grid-column:3/ span 2;
+  grid-column:3/ span 3;
   grid-row: 10;
   text-align: center;
-  margin-top: 30%;
+  margin-top: 20%;
   font-size: 18px;
 
 }
@@ -99,22 +99,22 @@ body{
 
 }
 .dieren__giraf__vraagteken{
-  width: 15rem;
+  width: 16rem;
 }
 .dieren__giraf__dier{
-  width: 15rem;
+  width: 16rem;
 }
 .dieren__pinguin__vraagteken{
-  width: 15rem;
+  width: 16rem;
 }
 .dieren__pinguin__dier{
-  width: 15rem;
+  width: 16rem;
 }
 .dieren__olifant__vraagteken{
-  width: 15rem;
+  width: 16rem;
 }
 .dieren__olifant__dier{
-  width: 15rem;
+  width: 16rem;
 }
 
 .menu{

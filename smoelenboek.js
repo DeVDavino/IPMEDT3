@@ -28,17 +28,19 @@ function myFunction() {
   if (goedeMarker1==marker1){
     sec1.hidden = false;
     vraagteken1.hidden = true;
+    document.getElementById("giraf_titel").innerHTML = "De Giraf";
 
   }
   if (goedeMarker2==marker2){
     sec2.hidden = false;
     vraagteken2.hidden = true;
+    document.getElementById("pinguin_titel").innerHTML = "De Pinguin";
 
   }
   if (goedeMarker3==marker3){
     sec3.hidden = false;
     vraagteken3.hidden = true;
-
+    document.getElementById("olifant_titel").innerHTML = "De Olifant";
   }
 
 }
