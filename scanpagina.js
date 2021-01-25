@@ -1,5 +1,4 @@
 
-
 AFRAME.registerComponent('giraf', {
 
 
@@ -11,6 +10,9 @@ AFRAME.registerComponent('giraf', {
       console.log('markerFound', markerId);
       var markerGevonden1 = "Giraf";
       sessionStorage.setItem("marker1", markerGevonden1);
+
+
+
 
 
     });

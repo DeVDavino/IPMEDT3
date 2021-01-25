@@ -5,14 +5,22 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="scanpagina.css">
+    <link rel="stylesheet" href="scan.css">
     <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
     <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
     <script src="scanpagina.js" defer></script>
   </head>
-  <body onload=myFunction()>
-    <h1>Hoi</h1>
-    <iframe src="scanpagina.html" width="300px" height="375px"></iframe>
-    <button onclick="window.location.href='smoelenboek.html'"> smoelenboek </button>
+  <body>
+    <article class="container">
+      <div class="top">
+        <div class="top__grid">
+          <h1 class="top__grid__logo">Hospital Hero</h1>
+          <iframe class="top__grid__window" src="scanpagina.html" ></iframe>
+        </div>
+      </div>
+      <h1 class="container__header1"> Er zijn dieren verstopt!</h1>
+      <p class="container__tekst">Richt je telefoon op een QR-code om te ontdekken welk dier erachter zit!</p>
+    <button class="container__button" onclick="window.location.href='smoelenboek.html'"> Smoelenboek </button>
+  </article>
   </body>
 </html>

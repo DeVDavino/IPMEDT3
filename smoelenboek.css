@@ -1,1 +1,125 @@
-test
+*, *::before, *::after{
+  margin:0;
+  padding:0;
+  font-family: 'Chewy', cursive;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+:root{
+  --primary-color: #386362;
+  --secondary-color: #FED248;
+  --white-text: #FFFFFF;
+  --background-color: #FCF8EE;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows:repeat(16,minmax(0,1fr));
+  grid-template-columns:repeat(12,minmax(0,1fr));
+}
+
+.top{
+  grid-column: span 12;
+  grid-row: 1;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  border-radius: 0 0 2rem 2rem;
+}
+
+.top__grid{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows:repeat(1,minmax(0,1fr));
+  grid-template-columns:repeat(12,minmax(0,1fr));
+}
+
+.top__grid__logo{
+  grid-column: 4 / span 6;
+  grid-row: 1;
+  color: var(--white-text);
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.titel__dieren__giraf{
+  grid-column:3/span 2;
+  grid-row: 2;
+  text-align: center;
+  margin-top: 30%;
+  font-size: 18px;
+}
+.titel__dieren__pinguin{
+  grid-column:8/span 2;
+  grid-row: 6;
+  text-align: center;
+  margin-top: 30%;
+  font-size: 18px;
+
+}
+.titel__dieren__olifant{
+  grid-column:3/ span 2;
+  grid-row: 10;
+  text-align: center;
+  margin-top: 30%;
+  font-size: 18px;
+
+}
+
+.dieren__giraf{
+  grid-column:2;
+  grid-row: 3;
+  text-align: center;
+
+}
+.dieren__pinguin{
+  grid-column:7;
+  grid-row: 7;
+
+}
+.dieren__olifant{
+  grid-column:2;
+  grid-row: 11;
+
+}
+.dieren__giraf__vraagteken{
+  width: 15rem;
+}
+.dieren__giraf__dier{
+  width: 15rem;
+}
+.dieren__pinguin__vraagteken{
+  width: 15rem;
+}
+.dieren__pinguin__dier{
+  width: 15rem;
+}
+.dieren__olifant__vraagteken{
+  width: 15rem;
+}
+.dieren__olifant__dier{
+  width: 15rem;
+}
+
+.menu{
+  grid-column: 2 / span 10;
+  grid-row: 15;
+  background-color: var(--primary-color);
+  border-radius: 4rem;
+}
