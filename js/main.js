@@ -16,7 +16,7 @@ window.onload = function () {
         });
         model.setAttribute("rotation", {
             x: 0,
-            y: 90,
+            y: 110,
             z: 0
         });
         model.setAttribute("animation-mixer", "loop:repeat");
@@ -27,7 +27,7 @@ window.onload = function () {
         });
 
         // Chose the right gltf 3D model based on recieved data.
-        switch (receivedGData) {
+        switch ("1") {
 
             case "1":
                 model.setAttribute("gltf-model", "#rafrafwalking")
@@ -63,22 +63,22 @@ window.onload = function () {
         const model = document.createElement("a-entity");
         model.setAttribute("position", {
             x: 4,
-            y: -1.99,
+            y: -1.90,
             z: -8
         });
         model.setAttribute("rotation", {
             x: 0,
-            y: 90,
+            y: -20,
             z: 0
         });
         model.setAttribute("animation-mixer", "loop:repeat");
         model.setAttribute("scale", {
-            x: 0.4,
-            y: 0.4,
-            z: 0.4
+            x: 0.7,
+            y: 0.7,
+            z: 0.7
         });
 
-        switch (receivedOData) {
+        switch ("3") {
 
             case "1":
                 model.setAttribute("gltf-model", "#olifant")
@@ -113,13 +113,13 @@ window.onload = function () {
     const pinguin = () => {
         const model = document.createElement("a-entity");
         model.setAttribute("position", {
-            x: 4,
-            y: -1.99,
-            z: 8
+            x: 3,
+            y: -1.90,
+            z: 3
         });
         model.setAttribute("rotation", {
             x: 0,
-            y: 90,
+            y: 200,
             z: 0
         });
         model.setAttribute("animation-mixer", "loop:repeat");
@@ -129,7 +129,7 @@ window.onload = function () {
             z: 0.4
         });
 
-        switch (receivedPData) {
+        switch ("1") {
 
             case "1":
                 model.setAttribute("gltf-model", "#pinguin")
