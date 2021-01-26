@@ -27,7 +27,7 @@ window.onload = function () {
         });
 
         // Chose the right gltf 3D model based on recieved data.
-        switch ("1") {
+        switch (receivedGData) {
 
             case "1":
                 model.setAttribute("gltf-model", "#rafrafwalking")
@@ -78,7 +78,7 @@ window.onload = function () {
             z: 0.7
         });
 
-        switch ("3") {
+        switch (receivedOData) {
 
             case "1":
                 model.setAttribute("gltf-model", "#olifant")
@@ -129,7 +129,7 @@ window.onload = function () {
             z: 0.4
         });
 
-        switch ("1") {
+        switch (receivedPData) {
 
             case "1":
                 model.setAttribute("gltf-model", "#pinguin")
