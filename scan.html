@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="algemeen.css">
     <link rel="stylesheet" href="scan.css">
     <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
     <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
@@ -12,17 +13,38 @@
   </head>
   <body>
     <article class="container">
-      <div class="top">
-        <div class="top__grid">
-          <h1 class="top__grid__logo">Hospital Hero</h1>
-          <iframe class="top__grid__window" src="scanpagina.html" ></iframe>
+      <div class="container__top2">
+        <div class="container__top2__grid">
+          <h1 class="container__top2__grid__logo">Hospital Hero</h1>
+          <button class="container__top__grid__terug">
+            <a class="container__top__grid__terug__logo" href="home.html">&#8592;</a>
+          </button>
+          <iframe class="container__top2__grid__window" src="scanpagina.html" ></iframe>
         </div>
       </div>
       <h1 class="container__header1"> Er zijn dieren verstopt!</h1>
       <p class="container__tekst">Richt je telefoon op een QR-code om te ontdekken welk dier erachter zit!</p>
-    <button class="container__button" onclick="window.location.href='smoelenboek.html'"> Smoelenboek </button>
-    <nav class="menu">
-    <a class="menu__item" href="#"></a>
+    <section class="container__plant__rechts__onder">
+      <img class="container__plant__rechts__onder__afbeelding" src="img/plant-rechtsonder.png" alt="foto van blaadjes"></img>
+    </section>
+    <section class="container__plant__links__onder">
+      <img class="container__plant__links__onder__afbeelding" src="img/plant-link.png" alt="foto van blaadjes"></img>
+    </section>
+    <section class="container__dier__aapje__links__midden">
+      <img class="container__dier__aapje__links__midden__afbeelding" src="img/aapje.png" alt="foto van blaadjes"></img>
+    </section>
+    <nav class="container__menu">
+        <div class="container__menu__grid">
+          <a class="container__menu__grid__item" href="info.html">
+            <img class="container__menu__grid__item__image" src="img/menu_info.png" alt="info">
+          </a>
+          <a class="container__menu__grid__item" href="home.html">
+            <img class="container__menu__grid__item__image" src="img/menu_kaart.png" alt="kaart">
+          </a>
+          <a class="container__menu__grid__item" href="#">
+            <img class="container__menu__grid__item__image" src="img/menu_dier_active.png" alt="dier">
+          </a>
+      </div>
     </nav>
   </article>
   </body>
