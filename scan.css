@@ -46,7 +46,7 @@
   font-size: 18px;
 }
 
-.container__plant__rechts__onder{
+.container__plantrechtsonder{
   grid-column:8 / span 12;
   grid-row: 14/ span 4;
   text-align: center;
@@ -54,32 +54,40 @@
 
 
 }
-.container__plant__rechts__onder__afbeelding{
+.container__plantrechtsonder__afbeelding{
   width: 21rem;
   overflow:hidden;
 
 }
 
-.container__plant__links__onder{
+.container__plantlinksonder{
   grid-column:1/ span 8;
   grid-row: 14/ span 4;
   overflow:hidden;
 
 
 }
-.container__plant__links__onder__afbeelding{
+.container__plantlinksonder__afbeelding{
   width: 16rem;
   overflow:hidden;
 
 
 }
-.container__dier__aapje__links__midden{
+.container__aapjelinksmidden{
   grid-column:1/ span 8;
-  grid-row:10/ span 4;
+  grid-row:10/ span 6;
   overflow:hidden;
 
 }
 
-.container__dier__aapje__links__midden__afbeelding{
+.container__aapjelinksmidden__afbeelding{
   width: 10rem;
+}
+
+@media only screen and (max-width: 330px){
+
+  .container__aapjelinksmidden__afbeelding{
+    width: 6rem;
+  }
+
 }

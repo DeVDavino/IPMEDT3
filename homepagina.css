@@ -7,60 +7,59 @@
 .container__foto{
   width: 100%;
   grid-column: 1 / span 12;
-  grid-row: 1;
 
 }
-.container__locaties__plein{
-  grid-column:2;
-  grid-row: 8;
-  text-align: center;
-  width: 10rem;
-}
-.container__locaties__noordpool{
-  grid-column:9;
+.container__azie{
+  grid-column:3;
   grid-row: 9;
   text-align: center;
-  width: 10rem;
+  width: 8rem;
 }
-.container__locaties__savanne{
-  grid-column:2;
-  grid-row: 11;
+.container__noordpool{
+  grid-column:8;
+  grid-row: 9;
   text-align: center;
-  width: 10rem;
+  width: 8rem;
 }
-.container__locaties__azie{
-  grid-column:9;
+.container__savanne{
+  grid-column:3;
   grid-row: 12;
   text-align: center;
-  width: 10rem;
+  width: 8rem;
+}
+.container__plein{
+  grid-column:8;
+  grid-row: 12;
+  text-align: center;
+  width: 8rem;
 }
 
-.container__locaties__plein__afbeelding{
+.container__plein__afbeelding{
   width: 100%;
 
 }
-.container__locaties__noordpool__afbeelding{
+.container__noordpool__afbeelding{
   width: 100%;
 }
-.container__locaties__savanne__afbeelding{
+.container__savanne__afbeelding{
   width: 100%;
 }
-.container__locaties__azie__afbeelding{
+.container__azie__afbeelding{
   width: 100%;
 }
-.container__locaties__plein__tekst{
+.container__plein__tekst{
   font-size: 18px;
 }
-.container__locaties__noordpool__tekst{
+.container__noordpool__tekst{
   font-size: 18px;
 }
-.container__locaties__savanne__tekst{
+.container__savanne__tekst{
   font-size: 18px;
 }
-.container__locaties__azie__tekst{
+.container__azie__tekst{
   font-size: 18px;
 }
-.container__plant__rechts__onder{
+.container__plantrechtsonder{
   grid-column:8 / span 12;
   grid-row: 14/ span 4;
   text-align: center;
@@ -68,87 +67,118 @@
 
 
 }
-.container__plant__rechts__onder__afbeelding{
+.container__plantrechtsonder__afbeelding{
   width: 21rem;
   overflow:hidden;
 
 }
 
-.container__plant__links__onder{
+.container__plantlinksonder{
   grid-column:1/ span 8;
   grid-row: 14/ span 4;
   overflow:hidden;
 
 
 }
-.container__plant__links__onder__afbeelding{
+.container__plantlinksonder__afbeelding{
   width: 16rem;
   overflow:hidden;
 
 
 }
-.container__plant__rechts__midden{
+.container__plantrechtsmidden{
   grid-column:8 / span 12;
   grid-row: 5/ span 3;
   text-align: center;
 
 
 }
-.container__plant__rechts__midden__afbeelding{
+.container__plantrechtsmidden__afbeelding{
   width: 21rem;
 
 }
 
-.container__plant__links__midden{
+.container__plantlinksmidden{
   grid-column:1/ span 8;
   grid-row: 4/ span 3;
 
 
 }
-.container__plant__links__midden__afbeelding{
+.container__plantlinksmidden__afbeelding{
   width: 15rem;
   overflow:hidden;
 
 
 }
 
+@media only screen and (min-width: 375px){
+  .container__azie{
+    width: 9rem;
+  }
+  .container__noordpool{
+    width: 9rem;
+  }
+  .container__savanne{
+    width: 9rem;
+  }
+  .container__plein{
+    width: 9rem;
+  }
+
+}
+
+@media only screen and (min-width: 375px) and (min-height : 740px){
+  .container__azie{
+    grid-row: 8;
+    width: 10rem;
+  }
+  .container__noordpool{
+    grid-row: 9;
+    width: 10rem;
+  }
+  .container__savanne{
+    grid-row: 11;
+    width: 10rem;
+  }
+  .container__plein{
+    grid-row: 12;
+    width: 10rem;
+  }
+
+}
 
 @media only screen and (min-width: 430px){
-  .container__locaties__plein{
+  .container__azie{
     grid-column:3;
     grid-row: 9;
-    text-align: center;
     width: 8rem;
   }
-  .container__locaties__noordpool{
+  .container__noordpool{
     grid-column:8;
     grid-row: 10;
-    text-align: center;
     width: 8rem;
   }
-  .container__locaties__savanne{
+  .container__savanne{
     grid-column:3;
     grid-row: 12;
-    text-align: center;
     width: 8rem;
   }
-  .container__locaties__azie{
+  .container__plein{
     grid-column:8;
     grid-row: 13;
-    text-align: center;
     width: 8rem;
   }
 
-  .container__locaties__plein__tekst{
+  .container__plein__tekst{
     font-size: 18px;
   }
-  .container__locaties__noordpool__tekst{
+  .container__noordpool__tekst{
     font-size: 18px;
   }
-  .container__locaties__savanne__tekst{
+  .container__savanne__tekst{
     font-size: 18px;
   }
-  .container__locaties__azie__tekst{
+  .container__azie__tekst{
     font-size: 18px;
   }
 
