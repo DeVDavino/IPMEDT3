@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/algemeen.css">
+    <link rel="stylesheet" href="css/scan.css">
+    <link rel="shortcut icon" href="#">
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+    <script src="js/scanpagina.js" defer></script>
+    <script src="js/algemeengeluid.js" defer></script>
+  </head>
+  <body>
+    <article class="container">
+      <div class="container__top2">
+        <div class="container__top2__grid">
+          <h1 class="container__top2__grid__logo">Scannen</h1>
+          <div class="container__top__grid__terug">
+            <a class="container__top__grid__terug__logo" href="homepagina.html">&#8592;</a>
+          </div>
+          <iframe class="container__top2__grid__window" src="scanpagina.html" ></iframe>
+        </div>
+      </div>
+      <h1 class="container__header1"> Er zijn dieren verstopt!</h1>
+      <p class="container__tekst">Richt je telefoon op een QR-code om te ontdekken welk dier erachter zit!</p>
+      <picture onclick='blaadjes.play()' class="container__plantrechtsonder">
+        <source srcset="img/plant-rechtsonder.webp" type="image/webp">
+        <source srcset="img/plant-rechtsonder.png" type="image/png">
+        <img class="container__plantrechtsonder__afbeelding" src="img/plant-rechtsonder.webp" alt="foto van blaadjes">
+      </picture>
+      <picture onclick='blaadjes2.play()' class="container__plantlinksonder">
+        <source srcset="img/plant-link.webp" type="image/webp">
+        <source srcset="img/plant-link.png" type="image/png">
+        <img class="container__plantlinksonder__afbeelding" src="img/plant-link.webp" alt="foto van blaadjes">
+      </picture>
+      <picture onclick='aapje.play()' class="container__aapjelinksmidden">
+        <source srcset="img/aapje.webp" type="image/webp">
+        <source srcset="img/aapje.png" type="image/png">
+        <img class="container__aapjelinksmidden__afbeelding" src="img/aapje.webp" alt="foto van blaadjes">
+      </picture>
+      <nav class="container__menu">
+        <div class="container__menu__grid">
+          <a class="container__menu__grid__item" href="info.html">
+            <picture class="container__menu__grid__item__imagecontainer">
+              <source srcset="img/menu_info.webp" type="image/webp">
+              <source srcset="img/menu_info.png" type="image/png">
+              <img class="container__menu__grid__item__imagecontainer__image" src="img/menu_info.png" alt="info">
+            </picture>
+          </a>
+          <a class="container__menu__grid__item" href="home.html">
+            <picture class="container__menu__grid__item__imagecontainer">
+              <source srcset="img/menu_kaart.webp" type="image/webp">
+              <source srcset="img/menu_kaart.png" type="image/png">
+              <img class="container__menu__grid__item__imagecontainer__image" src="img/menu_kaart.png" alt="kaart">
+            </picture>
+          </a>
+          <a class="container__menu__grid__item" href="#">
+            <picture class="container__menu__grid__item__imagecontainer">
+              <source srcset="img/menu_dier.webp" type="image/webp">
+              <source srcset="img/menu_dier.png" type="image/png">
+              <img class="container__menu__grid__item__imagecontainer__image" src="img/menu_dier.png" alt="dier">
+            </picture>
+          </a>
+      </div>
+    </nav>
+  </article>
+  </body>
+</html>

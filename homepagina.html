@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/algemeen.css">
+    <link rel="stylesheet" href="css/homepagina.css">
+    <link rel="shortcut icon" href="#">
+    <script src="js/algemeengeluid.js"></script>
+  </head>
+  <body>
+    <article class="container">
+        <img srcset="img/homepagina.webp" class="container__foto" src="img/homepagina.webp" alt="foto van de hospital hero dieren">
+      <section class="container__informatie">
+        <picture>
+        <source srcset="img/azie.webp" type="azie/webp">
+        <source srcset="img/azie.png" type="azie/png">
+        <img onclick="window.location.href='info.html'" class="container__informatie__afbeelding" src="img/azie.webp" alt="foto van het nummer 1">
+      </picture>
+        <p class="container__informatie__tekst"> Informatie </p>
+      </section>
+      <section class="container__scannen">
+        <picture>
+        <source srcset="img/noordpool.webp" type="image/webp">
+        <source srcset="img/noordpool.png" type="image/png">
+        <img onclick="window.location.href='scan.html'" class="container__scannen__afbeelding" src="img/noordpool.webp" alt="foto van het nummer 2">
+      </picture>
+        <p class="container__scannen__tekst"> Scannen </p>
+      </section>
+      <section class="container__smoelenboek">
+        <picture>
+        <source srcset="img/savanne.webp" type="image/webp">
+        <source srcset="img/savanne.png" type="image/png">
+        <img onclick="window.location.href='smoelenboek.html'" class="container__smoelenboek__afbeelding" src="img/savanne.webp" alt="foto van het nummer 3">
+      </picture>
+        <p class="container__smoelenboek__tekst"> Smoelenboek </p>
+      </section>
+      <section class="container__plein">
+        <picture>
+        <source srcset="img/plein.webp" type="image/webp">
+        <source srcset="img/plein.png" type="image/png">
+        <img onclick="window.location.href='plein.html'" class="container__plein__afbeelding" src="img/plein.webp" alt="foto van het nummer 4">
+        </picture>
+        <p class="container__plein__tekst"> Plein </p>
+      </section>
+      <picture onclick='blaadjes.play()' class="container__plantrechtsonder">
+        <source srcset="img/plant-rechtsonder.webp" type="image/webp">
+        <source srcset="img/plant-rechtsonder.png" type="image/png">
+        <img class="container__plantrechtsonder__afbeelding" src="img/plant-rechtsonder.webp" alt="foto van blaadjes">
+      </picture>
+      <picture onclick='blaadjes2.play()' class="container__plantlinksonder">
+        <source srcset="img/plant-link.webp" type="image/webp">
+        <source srcset="img/plant-link.png" type="image/png">
+        <img class="container__plantlinksonder__afbeelding" src="img/plant-link.webp" alt="foto van blaadjes">
+      </picture>
+      <picture  onclick='blaadjes.play()' class="container__plantrechtsmidden">
+        <source srcset="img/plant-rechtsonder.webp" type="image/webp">
+        <source srcset="img/plant-rechtsonder.png" type="image/png">
+        <img class="container__plantrechtsmidden__afbeelding" src="img/plant-rechtsonder.webp" alt="foto van blaadjes">
+      </picture>
+      <picture onclick='blaadjes2.play()' class="container__plantlinksmidden">
+        <source srcset="img/plant-link.webp" type="image/webp">
+        <source srcset="img/plant-link.png" type="image/png">
+        <img class="container__plantlinksmidden__afbeelding" src="img/plant-link.webp" alt="foto van blaadjes">
+      </picture>
+      <nav class="container__menu">
+        <div class="container__menu__grid">
+          <a class="container__menu__grid__item" href="info.html">
+            <picture class="container__menu__grid__item__imagecontainer">
+              <source srcset="img/menu_info.webp" type="image/webp">
+              <source srcset="img/menu_info.png" type="image/png">
+              <img class="container__menu__grid__item__imagecontainer__image" src="img/menu_info.png" alt="info">
+            </picture>
+          </a>
+          <a class="container__menu__grid__item" href="home.html">
+            <picture class="container__menu__grid__item__imagecontainer">
+              <source srcset="img/menu_kaart_active.webp" type="image/webp">
+              <source srcset="img/menu_kaart_active.png" type="image/png">
+              <img class="container__menu__grid__item__imagecontainer__image" src="img/menu_kaart_active.png" alt="kaart">
+            </picture>
+          </a>
+          <a class="container__menu__grid__item" href="#">
+            <picture class="container__menu__grid__item__imagecontainer">
+              <source srcset="img/menu_dier.webp" type="image/webp">
+              <source srcset="img/menu_dier.png" type="image/png">
+              <img class="container__menu__grid__item__imagecontainer__image" src="img/menu_dier.png" alt="dier">
+            </picture>
+          </a>
+      </div>
+      </nav>
+  </article>
+  </body>
+</html>

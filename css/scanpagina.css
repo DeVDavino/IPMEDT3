@@ -1,0 +1,10 @@
+body{
+  overflow: hidden;
+}
+.a-enter-vr-button{
+  visibility: hidden;
+}
+
+#arjsDebugUIContainer{
+  visibility:hidden;
+}
