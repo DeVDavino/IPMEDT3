@@ -21,10 +21,10 @@
 
         <div class="container__top">
             <div class="container__top__grid">
-                <h1 class="container__top__grid__logo">Algemene info</h1>
-                <button class="container__top__grid__terug">
+                <h1 class="container__top__grid__logo">Hospital Hero</h1>
+                <div class="container__top__grid__terug">
                     <a class="container__top__grid__terug__logo" href="home.html">&#8592;</a>
-                </button>
+                </div>
             </div>
         </div>
 
@@ -35,27 +35,61 @@
         <section class="desclogo">
             <ul class="desclogo__list">
                 <li class="desclogo__list__item">
-                    <img class="desclogo__list__item__image" src="" alt="onbreekt">
+                    <div class="desclogo__list__item__background">
+                        <picture>
+                            <source srcset="/img/menu_kaart.webp" type="image/webp">
+                            <source srcset="/img/menu_kaart.webp" type="image/png">
+                            <img class="desclogo__list__item__background__image" src="/img/menu_kaart.png" alt="menu kaart">
+                        </picture>
+                    </div>
                 </li>
 
                 <li class="desclogo__list__item">
-                    <img class="desclogo__list__item__image" src="" alt="onbreekt">
+                    <div class="desclogo__list__item__background">
+                        <picture>
+                            <source srcset="/img/menu_dier.webp" type="image/webp">
+                            <source srcset="/img/menu_dier.png" type="image/png">
+                            <img class="desclogo__list__item__background__image" src="/img/menu_dier.png" alt="menu dier">
+                        </picture>
+                    </div>
                 </li>
 
                 <li class="desclogo__list__item">
-                    <img class="desclogo__list__item__image" src="" alt="onbreekt">
+                    <picture>
+                        <source srcset="/img/azie.webp" type="image/webp">
+                        <source srcset="/img/azie.png" type="image/png">
+                        <img class="desclogo__list__item__background__image" src="/img/azie.png" alt="azie">
+                    </picture>
                 </li>
 
                 <li class="desclogo__list__item">
-                    <img class="desclogo__list__item__image" src="" alt="onbreekt">
+                    <div class="desclogo__list__item__background">
+                        <picture>
+                            <source srcset="/img/aankleden.webp" type="image/webp">
+                            <source srcset="/img/aankleden.png" type="image/png">
+                            <img class="desclogo__list__item__background__image" src="/img/aankleden.png" alt="aankleden image">
+                        </picture>
+                    </div>
                 </li>
 
                 <li class="desclogo__list__item">
-                    <img class="desclogo__list__item__image" src="" alt="onbreekt">
+                    <div class="desclogo__list__item__background">
+                        <picture>
+                            <source srcset="/img/menu_info.webp" type="image/webp">
+                            <source srcset="/img/menu_info.png" type="image/png">
+                            <img class="desclogo__list__item__background__image" src="/img/menu__info.png" alt="menu info">
+                        </picture>
+                    </div>
                 </li>
 
                 <li class="desclogo__list__item">
-                    <img class="desclogo__list__item__image" src="" alt="onbreekt">
+                    <div class="desclogo__list__item__background">
+                        <picture>
+                            <source srcset="/img/video.webp" type="image/webp">
+                            <source srcset="/img/video.png" type="image/png">
+                            <img class="desclogo__list__item__background__image" src="/img/video.png" alt="video">
+                        </picture>
+                    </div>
                 </li>
             </ul>
         </section>
@@ -109,13 +143,28 @@
         <nav class="container__menu">
             <div class="container__menu__grid">
                 <a class="container__menu__grid__item" href="info.html">
-                    <img class="container__menu__grid__item__image" src="img\menu_info.png" alt="info">
+                    <picture class="container__menu__grid__item__imagecontainer">
+                        <source srcset="img/menu_info_active.webp" type="image/webp">
+                        <source srcset="img/menu_info_active.png" type="image/png">
+                        <img class="container__menu__grid__item__imagecontainer__image" src="img/menu_info_active.png"
+                            alt="info">
+                    </picture>
                 </a>
                 <a class="container__menu__grid__item" href="home.html">
-                    <img class="container__menu__grid__item__image" src="img\menu_kaart.png" alt="kaart">
+                    <picture class="container__menu__grid__item__imagecontainer">
+                        <source srcset="img/menu_kaart.webp" type="image/webp">
+                        <source srcset="img/menu_kaart.png" type="image/png">
+                        <img class="container__menu__grid__item__imagecontainer__image" src="img/menu_kaart.png"
+                            alt="kaart">
+                    </picture>
                 </a>
                 <a class="container__menu__grid__item" href="#">
-                    <img class="container__menu__grid__item__image" src="img\menu_dier_active.png" alt="dier">
+                    <picture class="container__menu__grid__item__imagecontainer">
+                        <source srcset="img/menu_dier.webp" type="image/webp">
+                        <source srcset="img/menu_dier.png" type="image/png">
+                        <img class="container__menu__grid__item__imagecontainer__image" src="img/menu_dier.png"
+                            alt="dier">
+                    </picture>
                 </a>
             </div>
         </nav>

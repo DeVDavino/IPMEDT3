@@ -1,4 +1,6 @@
 window.onload = function () {
+    const places = document.getElementsByClassName("js--place");
+    const camera = document.getElementById("js--camera");
     const scene = document.querySelector('a-scene');
     // Recieved Data
     var receivedPData = sessionStorage.getItem('pinguinOutfit');
@@ -10,9 +12,9 @@ window.onload = function () {
 
         const model = document.createElement("a-entity");
         model.setAttribute("position", {
-            x: -4,
-            y: -1.90,
-            z: -8
+            x: -5,
+            y: -2.2,
+            z: -5
         });
         model.setAttribute("rotation", {
             x: 0,
@@ -62,9 +64,9 @@ window.onload = function () {
     const olifant = () => {
         const model = document.createElement("a-entity");
         model.setAttribute("position", {
-            x: 4,
-            y: -1.90,
-            z: -8
+            x: 6,
+            y: -2.1,
+            z: -6
         });
         model.setAttribute("rotation", {
             x: 0,
@@ -113,13 +115,13 @@ window.onload = function () {
     const pinguin = () => {
         const model = document.createElement("a-entity");
         model.setAttribute("position", {
-            x: 3,
+            x: 0,
             y: -1.90,
             z: 3
         });
         model.setAttribute("rotation", {
             x: 0,
-            y: 200,
+            y: 180,
             z: 0
         });
         model.setAttribute("animation-mixer", "loop:repeat");
@@ -167,5 +169,15 @@ window.onload = function () {
     console.log(sessionStorage.getItem('giraffeOutfit'));
     console.log(sessionStorage.getItem('olifantOutfit'));
     console.log(sessionStorage.getItem('pinguinOutfit'));
+
+    for (let i = 0; i < places.length; i++) {
+        places[i].addEventListener("click", function (evt) {
+            let att = document.createAttribute("animation");
+            att.value = "property: position; easing: linear; dur: 2000; to: " +
+                this.getAttribute("position").x + " 1.6 " + this.getAttribute("position").z;
+            camera.setAttribute("animation", att.value);
+        });
+    }
+    
 
 };
