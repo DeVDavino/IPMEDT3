@@ -10,6 +10,7 @@ AFRAME.registerComponent('giraf', {
       console.log('markerFound', markerId);
       var markerGevonden1 = "Giraf";
       sessionStorage.setItem("marker1", markerGevonden1);
+      giraf_geluid.play();
 
 
 
@@ -38,6 +39,7 @@ AFRAME.registerComponent('pinguin', {
       console.log('markerFound', markerId);
       var markerGevonden2 = "Pinguin";
       sessionStorage.setItem("marker2", markerGevonden2);
+      pinguin_geluid.play();
 
 
     });
@@ -62,6 +64,7 @@ AFRAME.registerComponent('olifant', {
       console.log('markerFound', markerId);
       var markerGevonden3 = "Olifant";
       sessionStorage.setItem("marker3", markerGevonden3);
+      olifant_geluid.play();
 
 
     });

@@ -3,25 +3,26 @@
   overflow: hidden;
 }
 
-
 .container__foto{
   width: 100%;
   grid-column: 1 / span 12;
+  grid-row: 1;
 
 }
-.container__azie{
+
+.container__informatie{
   grid-column:3;
   grid-row: 9;
   text-align: center;
   width: 8rem;
 }
-.container__noordpool{
+.container__scannen{
   grid-column:8;
   grid-row: 9;
   text-align: center;
   width: 8rem;
 }
-.container__savanne{
+.container__smoelenboek{
   grid-column:3;
   grid-row: 12;
   text-align: center;
@@ -33,30 +34,41 @@
   text-align: center;
   width: 8rem;
 }
+.container__informatie:active{
+  width: 9rem;
+}
+.container__scannen:active{
+  width: 9rem;
+}
+.container__smoelenboek:active{
+  width: 9rem;
+}
+.container__plein:active{
+  width: 9rem;
+}
 
 .container__plein__afbeelding{
   width: 100%;
-
 }
-.container__noordpool__afbeelding{
+.container__scannen__afbeelding{
   width: 100%;
 }
-.container__savanne__afbeelding{
+.container__smoelenboek__afbeelding{
   width: 100%;
 }
-.container__azie__afbeelding{
+.container__informatie__afbeelding{
   width: 100%;
 }
 .container__plein__tekst{
   font-size: 18px;
 }
-.container__noordpool__tekst{
+.container__scannen__tekst{
   font-size: 18px;
 }
-.container__savanne__tekst{
+.container__smoelenboek__tekst{
   font-size: 18px;
 }
-.container__azie__tekst{
+.container__informatie__tekst{
   font-size: 18px;
 }
 .container__plantrechtsonder{
@@ -64,61 +76,45 @@
   grid-row: 14/ span 4;
   text-align: center;
   overflow:hidden;
-
-
 }
 .container__plantrechtsonder__afbeelding{
   width: 21rem;
   overflow:hidden;
-
 }
-
 .container__plantlinksonder{
   grid-column:1/ span 8;
   grid-row: 14/ span 4;
   overflow:hidden;
-
-
 }
 .container__plantlinksonder__afbeelding{
   width: 16rem;
   overflow:hidden;
-
-
 }
 .container__plantrechtsmidden{
   grid-column:8 / span 12;
   grid-row: 5/ span 3;
   text-align: center;
-
-
 }
 .container__plantrechtsmidden__afbeelding{
   width: 21rem;
-
 }
-
 .container__plantlinksmidden{
   grid-column:1/ span 8;
   grid-row: 4/ span 3;
-
-
 }
 .container__plantlinksmidden__afbeelding{
   width: 15rem;
   overflow:hidden;
-
-
 }
 
 @media only screen and (min-width: 375px){
-  .container__azie{
+  .container__informatie{
     width: 9rem;
   }
-  .container__noordpool{
+  .container__scannen{
     width: 9rem;
   }
-  .container__savanne{
+  .container__smoelenboek{
     width: 9rem;
   }
   .container__plein{
@@ -128,15 +124,15 @@
 }
 
 @media only screen and (min-width: 375px) and (min-height : 740px){
-  .container__azie{
+  .container__informatie{
     grid-row: 8;
     width: 10rem;
   }
-  .container__noordpool{
+  .container__scannen{
     grid-row: 9;
     width: 10rem;
   }
-  .container__savanne{
+  .container__smoelenboek{
     grid-row: 11;
     width: 10rem;
   }
@@ -148,17 +144,17 @@
 }
 
 @media only screen and (min-width: 430px){
-  .container__azie{
+  .container__informatie{
     grid-column:3;
     grid-row: 9;
     width: 8rem;
   }
-  .container__noordpool{
+  .container__scannen{
     grid-column:8;
     grid-row: 10;
     width: 8rem;
   }
-  .container__savanne{
+  .container__smoelenboek{
     grid-column:3;
     grid-row: 12;
     width: 8rem;
@@ -168,17 +164,16 @@
     grid-row: 13;
     width: 8rem;
   }
-
   .container__plein__tekst{
     font-size: 18px;
   }
-  .container__noordpool__tekst{
+  .container__scannen__tekst{
     font-size: 18px;
   }
-  .container__savanne__tekst{
+  .container__smoelenboek__tekst{
     font-size: 18px;
   }
-  .container__azie__tekst{
+  .container__informatie__tekst{
     font-size: 18px;
   }
 
