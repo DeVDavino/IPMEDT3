@@ -14,6 +14,10 @@ window.onload = function () {
     var receivedOData = sessionStorage.getItem('olifantOutfit');
     var receivedGData = sessionStorage.getItem('giraffeOutfit');
 
+
+    console.log(marker2);
+    console.log(marker3);
+
     // dynamically create a-entity with according values.
     const giraffe = () => {
         if (goedeMarker1 == marker1) {
@@ -36,9 +40,10 @@ window.onload = function () {
                 y: 0.4,
                 z: 0.4
             });
+            model.setAttribute("gltf-model", "#rafrafwalking")
 
             // Chose the right gltf 3D model based on recieved data.
-            switch (receivedPData) {
+            switch (receivedGData) {
 
                 case "1":
                     model.setAttribute("gltf-model", "#rafrafwalking")
@@ -94,8 +99,9 @@ window.onload = function () {
                 y: 0.7,
                 z: 0.7
             });
+            model.setAttribute("gltf-model", "#olifant")
 
-            switch ("5") {
+            switch (receivedOData) {
 
                 case "1":
                     model.setAttribute("gltf-model", "#olifant")
@@ -152,8 +158,9 @@ window.onload = function () {
                 y: .3,
                 z: .3
             });
+            model.setAttribute("gltf-model", "#pinguin")
 
-            switch ("5") {
+            switch (receivedPData) {
 
                 case "1":
                     model.setAttribute("gltf-model", "#pinguin")
@@ -191,6 +198,8 @@ window.onload = function () {
 
 
     olifant();
+    giraffe();
+    pinguin();
 
     console.log(sessionStorage.getItem('giraffeOutfit'));
     console.log(sessionStorage.getItem('olifantOutfit'));
