@@ -27,7 +27,7 @@ window.onload = function () {
         });
 
         // Chose the right gltf 3D model based on recieved data.
-        switch (receivedGData) {
+        switch ("5") {
 
             case "1":
                 model.setAttribute("gltf-model", "#rafrafwalking")
@@ -78,7 +78,7 @@ window.onload = function () {
             z: 0.7
         });
 
-        switch (receivedOData) {
+        switch ("5") {
 
             case "1":
                 model.setAttribute("gltf-model", "#olifant")
@@ -124,12 +124,12 @@ window.onload = function () {
         });
         model.setAttribute("animation-mixer", "loop:repeat");
         model.setAttribute("scale", {
-            x: 0.4,
-            y: 0.4,
-            z: 0.4
+            x: .3,
+            y: .3,
+            z: .3
         });
 
-        switch (receivedPData) {
+        switch ("5") {
 
             case "1":
                 model.setAttribute("gltf-model", "#pinguin")
