@@ -17,7 +17,7 @@
 
   <body>
     <article class="container">
-      
+
       <div class="container__top">
         <div class="container__top__grid">
           <h1 class="container__top__grid__logo">Hospital Hero</h1>
@@ -30,16 +30,29 @@
       <nav class="container__menu">
         <div class="container__menu__grid">
           <a class="container__menu__grid__item" href="info.html">
-            <img class="container__menu__grid__item__image" src="img\menu_info.png" alt="info">
+            <picture class="container__menu__grid__item__imagecontainer">
+              <source srcset="img\menu_info.webp" type="image/webp">
+              <source srcset="img\menu_info.png" type="image/png">
+              <img class="container__menu__grid__item__imagecontainer__image" src="img\menu_info.png" alt="info">
+            </picture>
           </a>
           <a class="container__menu__grid__item" href="home.html">
-            <img class="container__menu__grid__item__image" src="img\menu_kaart.png" alt="kaart">
+            <picture class="container__menu__grid__item__imagecontainer">
+              <source srcset="img\menu_kaart.webp" type="image/webp">
+              <source srcset="img\menu_kaart.png" type="image/png">
+              <img class="container__menu__grid__item__imagecontainer__image" src="img\menu_kaart.png" alt="kaart">
+            </picture>
           </a>
           <a class="container__menu__grid__item" href="#">
-            <img class="container__menu__grid__item__image" src="img\menu_dier_active.png" alt="dier">
+            <picture class="container__menu__grid__item__imagecontainer">
+              <source srcset="img\menu_dier_active.webp" type="image/webp">
+              <source srcset="img\menu_dier_active.png" type="image/png">
+              <img class="container__menu__grid__item__imagecontainer__image" src="img\menu_dier_active.png" alt="dier">
+            </picture>
           </a>
         </div>
       </nav>
+
 
     </article>
   </body>
