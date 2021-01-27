@@ -30,17 +30,24 @@
           <div class="container__topdetail__grid__slidecontainer">
 
             <div class="container__topdetail__grid__slidecontainer__slideshow">
-              <div class="container__topdetail__grid__slidecontainer__slideshow__slideFoto fade">
+              <picture class="container__topdetail__grid__slidecontainer__slideshow__slideFoto fade">
+                <source srcset="img/slideshow_olifant.webp" type="image/webp">
+                <source srcset="img/slideshow_olifant.jpg" type="image/jpg">
                 <img class="container__topdetail__grid__slidecontainer__slideshow__slideFoto__image" src="img/slideshow_olifant.jpg" alt="foto olifant">
-              </div>
+              </picture>
 
-              <div class="container__topdetail__grid__slidecontainer__slideshow__slideFoto fade">
-                <img class="container__topdetail__grid__slidecontainer__slideshow__slideFoto__image" src="img/slideshow_olifant_mother.jpg" alt="foto close up olifant">
-              </div>
+              <picture class="container__topdetail__grid__slidecontainer__slideshow__slideFoto fade">
+                <source srcset="img/slideshow_olifant_mother.webp" type="image/webp">
+                <source srcset="img/slideshow_olifant_mother.jpg" type="image/jpg">
+                <img class="container__topdetail__grid__slidecontainer__slideshow__slideFoto__image" src="img/slideshow_olifant_mother.jpg" alt="foto olifant en kleintje">
+              </picture>
 
-              <div class="container__topdetail__grid__slidecontainer__slideshow__slideFoto fade">
-                <img class="container__topdetail__grid__slidecontainer__slideshow__slideFoto__image" src="img/slideshow_olifant_baby.jpg" alt="mogelijke video">
-              </div>
+              <picture class="container__topdetail__grid__slidecontainer__slideshow__slideFoto fade">
+                <source srcset="img/slideshow_olifant_baby.webp" type="image/webp">
+                <source srcset="img/slideshow_olifant_baby.jpg" type="image/jpg">
+                <img class="container__topdetail__grid__slidecontainer__slideshow__slideFoto__image" src="img/slideshow_olifant_baby.jpg" alt="foto kleine olifant">
+              </picture>
+
 
               <a class="container__topdetail__grid__slidecontainer__slideshow__vorige" onclick="slideplus(-1)">&#10094;</a>
               <a class="container__topdetail__grid__slidecontainer__slideshow__volgende" onclick="slideplus(1)">&#10095;</a>
@@ -65,13 +72,25 @@
       <nav class="container__menu">
         <div class="container__menu__grid">
           <a class="container__menu__grid__item" href="info.html">
-            <img class="container__menu__grid__item__image" src="img\menu_info.png" alt="info">
+            <picture class="container__menu__grid__item__imagecontainer">
+              <source srcset="img/menu_info.webp" type="image/webp">
+              <source srcset="img/menu_info.png" type="image/png">
+              <img class="container__menu__grid__item__imagecontainer__image" src="img/menu_info.png" alt="info">
+            </picture>
           </a>
           <a class="container__menu__grid__item" href="home.html">
-            <img class="container__menu__grid__item__image" src="img\menu_kaart.png" alt="kaart">
+            <picture class="container__menu__grid__item__imagecontainer">
+              <source srcset="img/menu_kaart.webp" type="image/webp">
+              <source srcset="img/menu_kaart.png" type="image/png">
+              <img class="container__menu__grid__item__imagecontainer__image" src="img/menu_kaart.png" alt="kaart">
+            </picture>
           </a>
           <a class="container__menu__grid__item" href="#">
-            <img class="container__menu__grid__item__image" src="img\menu_dier_active.png" alt="dier">
+            <picture class="container__menu__grid__item__imagecontainer">
+              <source srcset="img/menu_dier_active.webp" type="image/webp">
+              <source srcset="img/menu_dier_active.png" type="image/png">
+              <img class="container__menu__grid__item__imagecontainer__image" src="img/menu_dier_active.png" alt="dier">
+            </picture>
           </a>
         </div>
       </nav>
