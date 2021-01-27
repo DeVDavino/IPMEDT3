@@ -9,6 +9,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+      <link rel="stylesheet" type="text/css" href="css/algemeen.css" />
       <link rel="stylesheet" type="text/css" href="css/aankleden.css" />
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
@@ -18,32 +19,70 @@
 
   <body>
     <article class="container">
-      <div class="top">
-        <div class="top__grid">
-          <h1 class="top__grid__logo">Hospital Hero</h1>
-          <button type="button" class="top__grid__reset" onclick="resetKleding(pinguin)" id="--js-reset" name="reset">&#9851; </button>
+
+      <div class="container__top">
+        <div class="container__top__grid">
+          <h1 class="container__top__grid__logo">Hospital Hero</h1>
+          <div class="container__top__grid__terug">
+            <a class="container__top__grid__terug__logo" href="dierPinguin.html">&#8592;</a>
+          </div>
+          <button class="container__top__grid__reset" onclick="resetKleding(pinguin)">&#128472;</button>
         </div>
       </div>
 
       <div class="container__kleding">
         <ul class="container__kleding__list">
           <li class="container__kleding__list__item">
-            <img class="container__kleding__list__item__image" onclick="veranderKleding('phoed')" id="--js-phoed" src="img\hoed_preview.png" alt="phoed">
+            <picture>
+              <source srcset="img/hoed_preview.webp" type="image/webp">
+              <source srcset="img/hoed_preview.png" type="image/png">
+              <img class="container__kleding__list__item__image" onclick="veranderKleding('phoed')" src="img/hoed_preview.png" alt="phoed">
+            </picture>
           </li>
           <li class="container__kleding__list__item">
-            <img class="container__kleding__list__item__image" onclick="veranderKleding('bhoed')" id="--js-bhoed" src="img\bhoed_preview.png" alt="bhoed">
+            <picture>
+              <source srcset="img/bhoed_preview.webp" type="image/webp">
+              <source srcset="img/bhoed_preview.png" type="image/png">
+              <img class="container__kleding__list__item__image" onclick="veranderKleding('bhoed')" src="img/bhoed_preview.png" alt="bhoed">
+            </picture>
           </li>
           <li class="container__kleding__list__item">
-            <img class="container__kleding__list__item__image" onclick="veranderKleding('stropdas')" id="--js-stropdas" src="img\das_preview.png" alt="stropdas">
+            <picture>
+              <source srcset="img/das_preview.webp" type="image/webp">
+              <source srcset="img/das_preview.png" type="image/png">
+              <img class="container__kleding__list__item__image" onclick="veranderKleding('stropdas')" src="img/das_preview.png" alt="stropdas">
+            </picture>
           </li>
         </ul>
       </div>
       <div class="container__dier">
-        <img class= "container__dier__image" id="--js-dier" src="img\pinguin_preview.png" alt="afbeelding van Pinguin">
+        <img class= "container__dier__image" id="--js-dier" src="img/pinguin_preview.png" alt="afbeelding van Pinguin">
       </div>
 
-      <nav class="menu">
-        <a class="menu__item" href="#"></a>
+      <nav class="container__menu">
+        <div class="container__menu__grid">
+          <a class="container__menu__grid__item" href="info.html">
+            <picture class="container__menu__grid__item__imagecontainer">
+              <source srcset="img/menu_info.webp" type="image/webp">
+              <source srcset="img/menu_info.png" type="image/png">
+              <img class="container__menu__grid__item__imagecontainer__image" src="img/menu_info.png" alt="info">
+            </picture>
+          </a>
+          <a class="container__menu__grid__item" href="home.html">
+            <picture class="container__menu__grid__item__imagecontainer">
+              <source srcset="img/menu_kaart.webp" type="image/webp">
+              <source srcset="img/menu_kaart.png" type="image/png">
+              <img class="container__menu__grid__item__imagecontainer__image" src="img/menu_kaart.png" alt="kaart">
+            </picture>
+          </a>
+          <a class="container__menu__grid__item" href="#">
+            <picture class="container__menu__grid__item__imagecontainer">
+              <source srcset="img/menu_dier_active.webp" type="image/webp">
+              <source srcset="img/menu_dier_active.png" type="image/png">
+              <img class="container__menu__grid__item__imagecontainer__image" src="img/menu_dier_active.png" alt="dier">
+            </picture>
+          </a>
+        </div>
       </nav>
 
     </article>

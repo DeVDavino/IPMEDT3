@@ -61,7 +61,7 @@ function veranderAfbeelding(afbeelding){
   document.getElementById("--js-dier").src = afbeelding;
 }
 
-function resetKleding(giraffe){
+function resetKleding(pinguin){
   document.getElementById("--js-dier").src = pinguin;
   strop = false;
   var pinguinKleding = 1;
