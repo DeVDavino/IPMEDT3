@@ -110,3 +110,66 @@ body{
   height: 100%;
 
 }
+
+.container__plantrechtsonder{
+  grid-column:8 / span 12;
+  grid-row: 14/ span 4;
+  text-align: center;
+  overflow:hidden;
+}
+.container__plantrechtsonder__afbeelding{
+  width: 21rem;
+  overflow:hidden;
+}
+.container__plantlinksonder{
+  grid-column:1/ span 8;
+  grid-row: 14/ span 4;
+  overflow:hidden;
+}
+.container__plantlinksonder__afbeelding{
+  width: 16rem;
+  overflow:hidden;
+}
+.container__plantrechtsmidden{
+  grid-column:8 / span 12;
+  grid-row: 5/ span 3;
+  text-align: center;
+}
+.container__plantrechtsmidden__afbeelding{
+  width: 21rem;
+}
+.container__plantlinksmidden{
+  grid-column:1/ span 8;
+  grid-row: 4/ span 3;
+}
+.container__plantlinksmidden__afbeelding{
+  width: 15rem;
+  overflow:hidden;
+}
+.container__aapjelinksmidden{
+  grid-column:1/ span 8;
+  grid-row:6/ span 6;
+  overflow:hidden;
+
+}
+
+.container__aapjelinksmidden__afbeelding{
+  width: 10rem;
+}
+
+.container__takjeslinksmidden{
+  grid-column:1/ span 4;
+  grid-row:8/ span 4;
+  overflow:hidden;
+
+}
+.container__takjeslinksmidden__afbeelding{
+    width: 10rem;
+}
+@media only screen and (max-width: 330px){
+
+  .container__aapjelinksmidden__afbeelding{
+    width: 6rem;
+  }
+
+}
