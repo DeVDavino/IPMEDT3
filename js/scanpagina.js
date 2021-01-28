@@ -1,11 +1,10 @@
-
 AFRAME.registerComponent('giraf', {
 
 
   init: function () {
     var marker = this.el;
 
-    marker.addEventListener('markerFound', function() {
+    marker.addEventListener('markerFound', function () {
       var markerId = marker.id;
       console.log('markerFound', markerId);
       var markerGevonden1 = "Giraf";
@@ -18,7 +17,7 @@ AFRAME.registerComponent('giraf', {
 
     });
 
-    marker.addEventListener('markerLost', function() {
+    marker.addEventListener('markerLost', function () {
       var markerId = marker.id;
       console.log('markerLost', markerId);
     });
@@ -34,7 +33,7 @@ AFRAME.registerComponent('pinguin', {
   init: function () {
     var marker = this.el;
 
-    marker.addEventListener('markerFound', function() {
+    marker.addEventListener('markerFound', function () {
       var markerId = marker.id;
       console.log('markerFound', markerId);
       var markerGevonden2 = "Pinguin";
@@ -44,7 +43,7 @@ AFRAME.registerComponent('pinguin', {
 
     });
 
-    marker.addEventListener('markerLost', function() {
+    marker.addEventListener('markerLost', function () {
       var markerId = marker.id;
       console.log('markerLost', markerId);
     });
@@ -59,7 +58,7 @@ AFRAME.registerComponent('olifant', {
   init: function () {
     var marker = this.el;
 
-    marker.addEventListener('markerFound', function() {
+    marker.addEventListener('markerFound', function () {
       var markerId = marker.id;
       console.log('markerFound', markerId);
       var markerGevonden3 = "Olifant";
@@ -69,7 +68,7 @@ AFRAME.registerComponent('olifant', {
 
     });
 
-    marker.addEventListener('markerLost', function() {
+    marker.addEventListener('markerLost', function () {
       var markerId = marker.id;
       console.log('markerLost', markerId);
     });

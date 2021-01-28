@@ -52,8 +52,6 @@
     margin: 1rem;
 }
 
-
-
 .desctextbox{
     grid-column: 4 / span 8;
     grid-row: 4 / span 10;

@@ -26,7 +26,7 @@ window.onload = function () {
             const model = document.createElement("a-entity");
             model.setAttribute("position", {
                 x: -5,
-                y: -2.2,
+                y: 0,
                 z: -5
             });
             model.setAttribute("rotation", {
@@ -85,7 +85,7 @@ window.onload = function () {
             const model = document.createElement("a-entity");
             model.setAttribute("position", {
                 x: 6,
-                y: -2.1,
+                y: 0.25,
                 z: -6
             });
             model.setAttribute("rotation", {
@@ -144,7 +144,7 @@ window.onload = function () {
             const model = document.createElement("a-entity");
             model.setAttribute("position", {
                 x: 0,
-                y: -1.90,
+                y: 0.3,
                 z: 3
             });
             model.setAttribute("rotation", {
@@ -206,13 +206,11 @@ window.onload = function () {
     console.log(sessionStorage.getItem('pinguinOutfit'));
 
     for (let i = 0; i < places.length; i++) {
-        places[i].addEventListener("click", function (evt) {
+        places[i].addEventListener('click', function (evt) {
             let att = document.createAttribute("animation");
-            att.value = "property: position; easing: linear; dur: 2000; to: " +
-                this.getAttribute("position").x + " 1.6 " + this.getAttribute("position").z;
-            camera.setAttribute("animation", att.value);
+            att.value = "property: position; easing: linear; dur: 2000; to: " + this.getAttribute('position').x + " 1.6 " + this.getAttribute('position').z;
+            camera.setAttribute('animation', att.value);
         });
     }
-
 
 };
