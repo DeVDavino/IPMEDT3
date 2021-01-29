@@ -8,7 +8,7 @@ scannen. Stap 3 is de dieren aankleden/ informatie over lezen en stap 4 is de di
 De dieren die je aankleed komen ook aangekleed op het plein terecht.
 
 De Markers die je nodig hebt om de dieren te scannen zitten in deze map (instructies). Deze kan je uitprinten of op je telefoon voor de camera houden. (Als je dit doet 
-houdt de markers een beetje schuin voor de camera ivm een reflectie van je scherm.) Houdt de markers niet te dichtbij en beweeg ze een beetje rond als je de dieren niet
+houdt de markers een beetje schuin voor de camera ivm een reflectie van je scherm en zet je helderheid zo laag mogelijk.) Houdt de markers niet te dichtbij en beweeg ze een beetje rond als je de dieren niet
 kan vinden.
 
 Veel scanplezier en succes!
