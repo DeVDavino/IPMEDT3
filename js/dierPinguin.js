@@ -1,7 +1,7 @@
 
 window.onload=function(){
 
-var receivedGData = sessionStorage.getItem('pinguinOutfit');
+var receivedPData = sessionStorage.getItem('pinguinOutfit');
 const pinguin = 'img/pinguin_preview.png';
 const pinguin_phoed = 'img/pinguin_phoed_preview.png';
 const pinguin_bhoed = 'img/pinguin_bhoed_preview.png';
@@ -13,7 +13,7 @@ const pinguin_bhoed_stropdas = 'img/pinguin_bhoed_stropdas_preview.png';
 
 var pinguinKledingOnloadDier = () => {
 
-        switch (receivedGData) {
+        switch (receivedPData) {
 
             case "1":
                 veranderAfbeelding(pinguin);
@@ -45,11 +45,11 @@ var pinguinKledingOnloadDier = () => {
 }
 
 function veranderAfbeelding(afbeelding){
-  document.getElementById("--js-dier").src = afbeelding;
+    document.getElementById("--js-dier").src = afbeelding;
 
 }
 
 
-console.log(receivedGData);
+
 pinguinKledingOnloadDier();
 }

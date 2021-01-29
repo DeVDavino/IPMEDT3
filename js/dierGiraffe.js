@@ -45,11 +45,9 @@ var giraffeKledingOnloadDier = () => {
 }
 
 function veranderAfbeelding(afbeelding){
-  document.getElementById("--js-dier").src = afbeelding;
+    document.getElementById("--js-dier").src = afbeelding;
 
 }
 
-
-console.log(receivedGData);
 giraffeKledingOnloadDier();
 }

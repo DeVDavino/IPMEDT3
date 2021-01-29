@@ -1,6 +1,6 @@
 window.onload=function(){
 
-  var receivedGData = sessionStorage.getItem('olifantOutfit');
+  var receivedOData = sessionStorage.getItem('olifantOutfit');
   const olifant = 'img/olifant_preview.png';
   const olifant_phoed = 'img/olifant_phoed_preview.png';
   const olifant_bhoed = 'img/olifant_bhoed_preview.png';
@@ -11,7 +11,7 @@ window.onload=function(){
 
   var olifantKledingOnloadAankleden = () => {
 
-          switch (receivedGData) {
+          switch (receivedOData) {
 
               case "1":
                   veranderAfbeelding(olifant);
@@ -46,8 +46,6 @@ window.onload=function(){
 
   }
 
-
-  console.log(receivedGData);
   olifantKledingOnloadAankleden();
 
 }

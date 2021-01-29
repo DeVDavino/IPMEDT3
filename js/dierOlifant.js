@@ -1,7 +1,7 @@
 
 window.onload=function(){
 
-var receivedGData = sessionStorage.getItem('olifantOutfit');
+var receivedOData = sessionStorage.getItem('olifantOutfit');
 const olifant = 'img/olifant_preview.png';
 const olifant_phoed = 'img/olifant_phoed_preview.png';
 const olifant_bhoed = 'img/olifant_bhoed_preview.png';
@@ -13,7 +13,7 @@ const olifant_bhoed_stropdas = 'img/olifant_bhoed_stropdas_preview.png';
 
 var olifantKledingOnloadDier = () => {
 
-        switch (receivedGData) {
+        switch (receivedOData) {
 
             case "1":
                 veranderAfbeelding(olifant);
@@ -45,11 +45,10 @@ var olifantKledingOnloadDier = () => {
 }
 
 function veranderAfbeelding(afbeelding){
-  document.getElementById("--js-dier").src = afbeelding;
+    document.getElementById("--js-dier").src = afbeelding;
 
 }
 
 
-console.log(receivedGData);
 olifantKledingOnloadDier();
 }

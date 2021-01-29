@@ -1,7 +1,7 @@
 window.onload=function(){
 
 
-  var receivedGData = sessionStorage.getItem('pinguinOutfit');
+  var receivedPData = sessionStorage.getItem('pinguinOutfit');
   const pinguin = 'img/pinguin_preview.png';
   const pinguin_phoed = 'img/pinguin_phoed_preview.png';
   const pinguin_bhoed = 'img/pinguin_bhoed_preview.png';
@@ -13,7 +13,7 @@ window.onload=function(){
 
   var pinguinKledingOnloadAankleden = () => {
 
-          switch (receivedGData) {
+          switch (receivedPData) {
 
               case "1":
                   veranderAfbeelding(pinguin);
@@ -48,8 +48,6 @@ window.onload=function(){
 
   }
 
-
-  console.log(receivedGData);
   pinguinKledingOnloadAankleden();
 
 }
