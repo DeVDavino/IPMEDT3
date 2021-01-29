@@ -46,27 +46,27 @@ window.onload = function () {
             switch (receivedGData) {
 
                 case "1":
-                    model.setAttribute("gltf-model", "#rafrafwalking")
+                    model.setAttribute("gltf-model", "#rafrafwalking");
                     break;
 
                 case "2":
-                    model.setAttribute("gltf-model", "#rafrafwalking_phoed")
+                    model.setAttribute("gltf-model", "#rafrafwalking_phoed");
                     break;
 
                 case "3":
-                    model.setAttribute("gltf-model", "#rafrafwalking_bhoed")
+                    model.setAttribute("gltf-model", "#rafrafwalking_bhoed");
                     break;
 
                 case "4":
-                    model.setAttribute("gltf-model", "#rafrafwalking_stropdas")
+                    model.setAttribute("gltf-model", "#rafrafwalking_stropdas");
                     break;
 
                 case "5":
-                    model.setAttribute("gltf-model", "#rafrafwalking_phoed_stropdas")
+                    model.setAttribute("gltf-model", "#rafrafwalking_phoed_stropdas");
                     break;
 
                 case "6":
-                    model.setAttribute("gltf-model", "#rafrafwalking_bhoed_stropdas")
+                    model.setAttribute("gltf-model", "#rafrafwalking_bhoed_stropdas");
                     break;
 
             }
